@@ -54,7 +54,7 @@ const footer = (
       }}
     >
       <div>{new Date().getFullYear()} © minhdq.dev</div>
-      <div>Created with Nextra and ☕</div>
+      <div>Created with Nextra, Gemini 2.0, and ☕</div>
     </div>
   </Footer>
 );

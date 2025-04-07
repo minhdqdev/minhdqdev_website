@@ -6,12 +6,14 @@
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.0.0",
+    "lucide-react": "^0.487.0",
+    "motion": "^12.6.3",
     "next": "^15.1.6",
     "nextra": "^4.0.5",
     "nextra-theme-docs": "^4.0.5",
     "postcss": "^8.5.1",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "tailwindcss": "^4.0.0"
   },
   "devDependencies": {

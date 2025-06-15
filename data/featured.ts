@@ -2,107 +2,113 @@ const skills = [
   "Python",
   "Java",
   "JavaScript",
-  "React",
-  "Node.js",
-  "SQL",
+  "Django",
+  "ReactJS",
+  "Data Structures & Algorithms",
+  "OOP",
+  "Structured Programming",
+  "Relational Database",
+  "RESTful API",
+  "Solidity",
+  "Redis",
+  "RabbitMQ",
+  "Celery",
   "Docker",
-  "Git",
-  "AWS",
-  "RESTful APIs",
-  "Agile",
-  "Data Structures",
-  "Algorithms",
-  "Python",
-  "Java",
-  "JavaScript",
-  "React",
-  "Node.js",
-  "SQL",
-  "Docker",
-  "Git",
-  "AWS",
-  "RESTful APIs",
-  "Agile",
-  "Data Structures",
-  "Algorithms",
+  "Independent Working",
+  "Systematic Thinking",
+  "Problem-Solving",
+  "Peer Leadership",
+  "English (TOEIC 940)",
 ];
 
 
 const projects = [
   {
-    title: "E-commerce Website",
-    description:
-      "Developed a full-stack e-commerce platform with user authentication, product browsing, shopping cart, and checkout features.",
-    techStack: "React, Node.js, Express, PostgreSQL, Tailwind CSS",
-    imageUrl: "https://placehold.co/600x400/EEE/31343C", // Placeholder
-    link: "#",
-  },
-  {
-    title: "Data Visualization Dashboard",
-    description:
-      "Built an interactive dashboard to visualize and analyze data from various sources, providing insights through charts and graphs.",
-    techStack: "Python, Flask, D3.js, MongoDB, HTML/CSS",
-    imageUrl: "https://placehold.co/600x400/EEE/31343C", // Placeholder
-    link: "#",
-  },
-  {
-    title: "Machine Learning API",
-    description:
-      "Designed and implemented a RESTful API for a machine learning model, enabling predictions through HTTP requests.",
-    techStack: "Python, FastAPI, TensorFlow, Docker, AWS",
-    imageUrl: "https://placehold.co/600x400/EEE/31343C", // Placeholder
-    link: "#",
-  },
-  {
-    title: "Mobile Task Manager",
-    description:
-      "Created a mobile app to help users manage their daily tasks and schedules, with features like reminders, categories, and progress tracking.",
-    techStack: "React Native, Firebase, Redux",
+    title: "ContentBid",
+    description: "Designed and implemented Solidity smart contracts for this content marketplace.",
+    techStack: "Solidity",
     imageUrl: "https://placehold.co/600x400/EEE/31343C",
     link: "#",
   },
   {
-    title: "Personal Portfolio Website",
-    description:
-      "Designed and developed a personal website to showcase projects, skills, and experience.",
-    techStack: "Next.js, Tailwind CSS, Framer Motion",
+    title: "VnAlert",
+    description: "Contributed to the backend, focusing on building an exporting report service, optimizing database query performance, and improving message queues.",
+    techStack: "Django, Redis, RabbitMQ, Celery, Docker",
     imageUrl: "https://placehold.co/600x400/EEE/31343C",
     link: "#",
   },
   {
-    title: "Real-Time Chat Application",
-    description:
-      "Built a real-time chat application with features like direct messaging, group chats, and online presence.",
-    techStack: "Node.js, Socket.IO, React, MongoDB",
+    title: "AutoVid",
+    description: "Carried out this video automation web application project during an internship.",
+    techStack: "Django, Redis, RabbitMQ, Celery, Docker",
     imageUrl: "https://placehold.co/600x400/EEE/31343C",
     link: "#",
   },
-  ];
+  {
+    title: "Facial Recognition System",
+    description: "Worked in a team to develop a facial recognition system for CCTV cameras.",
+    techStack: "Python, Deep Learning, Computer Vision",
+    imageUrl: "https://placehold.co/600x400/EEE/31343C",
+    link: "#",
+  },
+  {
+    title: "Food Recommendation Application",
+    description: "Part of a team of five that built this application for the Developer Circles Vietnam Innovation Challenge, placing in the Top 12.",
+    techStack: "Python, Deep Learning",
+    imageUrl: "https://placehold.co/600x400/EEE/31343C",
+    link: "#",
+  },
+  {
+    title: "Virtually Try-on Clothes Web Application",
+    description: "Built using the VITON model for the AI4VN National Hackathon, achieving a Top 5 placement.",
+    techStack: "Python, Deep Learning, VITON model",
+    imageUrl: "https://placehold.co/600x400/EEE/31343C",
+    link: "#",
+  },
+];
 
 const experiences = [
   {
-    title: "Software Engineer Intern",
-    company: "Tech Innovators Inc.",
-    date: "Summer 2021",
-    description:
-      "Worked on developing new features for the company's flagship product, a cloud-based collaboration platform. Gained experience in Agile development, Git, and backend technologies.",
-    techStack: "Java, Spring Boot, PostgreSQL, Git, Agile",
+    title: "Software Engineer",
+    company: "Techcombank - Commercial Joint-stock Bank",
+    date: "Feb 2025 - Current",
+    description: "Developing and maintaining software solutions in the Payment MFT, focusing on the retail banking sector. Involved in the design and implementation of new features, ensuring high performance and responsiveness to requests from the front-end.",
+    techStack: "Java, Spring Boot, Redis, Kafka, Kubernetes",
   },
   {
-    title: "Research Assistant",
-    company: "University Research Lab",
-    date: "2020 - 2021",
-    description:
-      "Assisted in research on distributed systems and network optimization.  Implemented algorithms in Python and contributed to a research paper.",
-    techStack: "Python, Distributed Systems, Network Protocols, Research",
+    title: "Cryptologist",
+    company: "Vietnam People's Navy",
+    date: "Jan 2024 - Jan 2025",
+    description: "Maintained the operation of the radio communication system between Navy headquarters and all under units.",
+    techStack: "",
   },
   {
-    title: "Freelance Web Developer",
-    company: "Self-Employed",
-    date: "2018 - 2020",
-    description:
-      "Designed and built websites for small businesses and individuals.  Developed skills in front-end and back-end web development.",
-    techStack: "HTML, CSS, JavaScript, React, Node.js, Database",
+    title: "Squad Leader",
+    company: "Vietnam People's Navy",
+    date: "Feb 2023 - Dec 2024",
+    description: "Supervised a squad of 10 soldiers, ensuring safety and compliance in daily training and mission execution.",
+    techStack: "",
+  },
+  {
+    title: "Management Associate",
+    company: "Techcombank - Commercial Joint-stock Bank",
+    date: "Oct 2022 - Feb 2023",
+    description: "Participated in an 18-month talent program, working in the ITOM team to evaluate Key Result Areas (KRAs), automate business processes, and build agile ability assessment. Gained familiarity with the bank's structure and IT department.",
+    techStack: "Python, SQL, Excel, Power BI",
+  },
+  {
+    title: "Software Developer (part-time)",
+    company: "AIV Group - Software Product Company",
+    date: "Oct 2019 - Aug 2022",
+    description: "Engaged in designing and implementing Solidity smart contracts for ContentBid, contributing to the backend of VnAlert (building exporting report service, optimizing database query performance, improving message queues), and carrying out the AutoVid project.",
+    techStack: "Django, Redis, RabbitMQ, Celery, Docker, Solidity",
+  },
+  {
+    title: "Data Scientist Intern",
+    company: "InfoRe Technology - Technology Startup Incubator",
+    date: "Jun 2018 - Aug 2019",
+    description: "Researched machine learning & deep learning models specialized in the Computer Vision field. Collaborated on developing a facial recognition system for CCTV cameras. Also presented weekly technical seminars and taught Python language to the Business team.",
+    techStack: "Machine Learning, Deep Learning, Computer Vision, Python",
   },
 ];
 

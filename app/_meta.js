@@ -16,6 +16,10 @@ export default {
     title: "Projects",
     type: "page",
   },
+  posts: {
+    title: "Posts",
+    type: "page",
+  },
   about: {
     title: "About",
     type: "page",

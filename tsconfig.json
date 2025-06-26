@@ -1,5 +1,13 @@
 {
   "compilerOptions": {
+    "baseUrl": ".", // This is crucial: It tells TypeScript/Next.js to resolve paths from the project root.
+    "paths": {
+      // This maps '@/' to the project root.
+      // So '@/components/ui/DisqusComments' becomes './components/ui/DisqusComments'
+      "@/*": [
+        "./*"
+      ]
+    },
     "target": "ES2017",
     "lib": [
       "dom",
@@ -27,8 +35,10 @@
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "components/index.js"  ],
+    "**/*.tsx",
+    "components/index.js",
+    "**/*.mdx",
+  ],
   "exclude": [
     "node_modules"
   ]

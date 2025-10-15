@@ -1,8 +1,0 @@
-@import "tailwindcss";
-
-@tailwind base; /* Apply Tailwind's base styles (Preflight) */
-@tailwind components; /* Include component styles */
-@tailwind utilities; /* Include utility classes */
-
-
-@variant dark (&:where(.dark, .dark *));

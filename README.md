@@ -1,18 +1,20 @@
 # minhdqdev_website
 
-I built the website minhdq.dev using the [`nextra-theme-docs`](https://nextra.site/docs/docs-theme/start).
-
+Source for [minhdq.dev](https://minhdq.dev), now built on top of the [Tailwind Next.js Starter Blog](https://github.com/timlrx/tailwind-nextjs-starter-blog) with Contentlayer-powered posts.
 
 ## Quickstart
 
-Install required dependencies:
+Install dependencies:
+
 ```shell
 npm install
 ```
 
-Run useful scripts:
-```shell
-npm run dev|build|start
-```
+Available scripts:
 
+```shell
+npm run dev     # Run the development server
+npm run build   # Create a production build and regenerate RSS/search data
+npm run start   # Serve the production build
+```
 

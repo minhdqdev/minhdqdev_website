@@ -29,7 +29,10 @@ GitHub repository secrets:
 - `HARBOR_PASSWORD`: Harbor registry password
 
 ### Runner
-Uses self-hosted runner with label: `[self-hosted, minhdqdev-org, manual]`
+Uses self-hosted runner with labels: `[self-hosted, minhdqdev, personal]`
+- Deployed in `minhdqdev-runners` namespace
+- Has access to internal Harbor registry
+- Dedicated to `minhdqdev/minhdqdev_website` repository
 
 ## Docker Configuration
 
@@ -153,12 +156,24 @@ argocd app diff minhdqdev-website-uat
 
 ## Migration Notes
 
-### Moving to minhdqdev-org
-When moving the repository to `minhdqdev-org`:
-1. Update GitHub workflow runner labels if needed
-2. Transfer GitHub secrets (`HARBOR_USERNAME`, `HARBOR_PASSWORD`)
-3. Update ArgoCD application source repo URL (currently points to `minhdqdev-org`)
-4. No other changes required - ArgoCD config already points to org
+### Repository Notes
+This repository is kept as a personal public repository on `minhdqdev/minhdqdev_website`.
+- Uses self-hosted runner for internal Harbor access
+- Runner deployed in `minhdqdev-runners` Kubernetes namespace
+- ArgoCD configuration is in `minhdqdev-org/minhdqdev-argocd-config`
+- No migration to organization needed
+
+### Runner Management
+To check runner status:
+```bash
+kubectl -n minhdqdev-runners get pods
+kubectl -n minhdqdev-runners get runnerdeployments
+```
+
+To scale runners:
+```bash
+kubectl -n minhdqdev-runners scale runnerdeployment minhdqdev-runners --replicas=2
+```
 
 ## Next Steps
 

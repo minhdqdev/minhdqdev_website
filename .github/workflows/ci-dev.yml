@@ -19,7 +19,7 @@ env:
 
 jobs:
   build-and-push:
-    runs-on: [self-hosted, minhdqdev-org, manual]
+    runs-on: [self-hosted, minhdqdev, personal]
     permissions:
       contents: read
     steps:

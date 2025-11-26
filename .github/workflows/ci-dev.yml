@@ -13,13 +13,13 @@ env:
   HARBOR_REGISTRY: harbor.minhdq.dev
   HARBOR_PROJECT: minhdqdev
   IMAGE_NAME: minhdqdev-website
-  DOCKER_CLIENT_TIMEOUT: "240"
-  COMPOSE_HTTP_TIMEOUT: "240"
+  DOCKER_CLIENT_TIMEOUT: '240'
+  COMPOSE_HTTP_TIMEOUT: '240'
   BUILD_NUMBER: ${{ github.run_number }}
 
 jobs:
   build-and-push:
-    runs-on: [self-hosted, minhdqdev, personal]
+    runs-on: [self-hosted, minhdqdev-org]
     permissions:
       contents: read
     steps:

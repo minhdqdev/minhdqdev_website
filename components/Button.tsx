@@ -21,7 +21,10 @@ const Button = ({ asChild, variant, className, children, ...props }: ButtonProps
   classes = `${classes} ${className}`
 
   if (asChild && React.isValidElement(children)) {
-    return React.cloneElement(children, { className: classes, ...props } as any)
+    return React.cloneElement(
+      children,
+      { className: classes, ...props } as React.HTMLAttributes<HTMLElement>
+    )
   }
 
   return (

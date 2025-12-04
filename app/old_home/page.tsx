@@ -159,7 +159,7 @@ const ProjectSection = () => {
 
   const handleProjectScroll = useCallback(
     (direction: 'left' | 'right') => {
-      const container = projectContainerRef.current.children[0] as HTMLElement
+      const container = projectContainerRef.current?.children[0] as HTMLElement
       if (!container) return
 
       console.log('handleProjectScroll called', direction, container)

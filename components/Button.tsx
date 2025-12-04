@@ -1,6 +1,13 @@
 import React from 'react'
 
-const Button = ({ asChild, variant, className, children, ...props }: any) => {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  asChild?: boolean
+  variant?: 'outline' | 'ghost'
+  className?: string
+  children?: React.ReactNode
+}
+
+const Button = ({ asChild, variant, className, children, ...props }: ButtonProps) => {
   const baseClasses = 'rounded-full text-lg inline-flex items-center justify-center gap-4'
   let classes = baseClasses
 

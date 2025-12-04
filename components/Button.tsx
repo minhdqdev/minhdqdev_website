@@ -20,9 +20,8 @@ const Button = ({ asChild, variant, className, children, ...props }: ButtonProps
 
   classes = `${classes} ${className}`
 
-  if (asChild) {
-    const child = React.Children.only(children)
-    return React.cloneElement(child, { className: classes, ...props })
+  if (asChild && React.isValidElement(children)) {
+    return React.cloneElement(children, { className: classes, ...props } as any)
   }
 
   return (
